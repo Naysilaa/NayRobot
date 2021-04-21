@@ -25,14 +25,14 @@ async def _(event):
         # print(reason)
         start_time = time.time()
         sql.set_afk(sender.id, reason, start_time)
-        await event.reply("**{} is now AFK !**".format(firsname), parse_mode="markdown")
+        await event.reply("**{} afk, jangan rindu...**".format(firsname), parse_mode="markdown")
         return
 
     if sql.is_afk(sender.id):
         res = sql.rm_afk(sender.id)
         if res:
             firstname = sender.first_name
-            text = "**{} is no longer AFK !**".format(firstname)
+            text = "**{} udah online lagi !**".format(firstname)
             await event.reply(text, parse_mode="markdown")
 
 
@@ -83,7 +83,7 @@ async def _(event):
             elapsed_time = time.time() - float(etime)
             final = time.strftime("%Hh: %Mm: %Ss", time.gmtime(elapsed_time))
             fst_name = "User"
-            res = "**{} is AFK !**\n\n**Last seen**: {}".format(fst_name, final)
+            res = "**{} lagi off !**\n\n**terakhir online**: {}".format(fst_name, final)
 
             await event.reply(res, parse_mode="markdown")
         else:
@@ -91,7 +91,7 @@ async def _(event):
             elapsed_time = time.time() - float(etime)
             final = time.strftime("%Hh: %Mm: %Ss", time.gmtime(elapsed_time))
             fst_name = "This user"
-            res = "**{} is AFK !**\n\n**He said to me that**: {}\n\n**Last seen**: {}".format(
+            res = "**{} lagi off !**\n\n**alasannya**: {}\n\n**terakhir online**: {}".format(
                 fst_name, user.reason, final
             )
             await event.reply(res, parse_mode="markdown")
