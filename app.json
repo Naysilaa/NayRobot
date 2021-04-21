@@ -1,16 +1,16 @@
 {
-  "name": "DaisyX",
+  "name": "NayRobot",
   "description": "?",
   "keywords": [
     "telegram",
     "Daisy",
     "plugin",
-    "telegram-DaisyX",
+    "telegram-MissNayBot",
     "fuck-TG"
   ],
-  "repository": "https://github.com/TeamDaisyX/Daisy-x",
+  "repository": "https://github.com/Naysilaa/NayRobot",
   "website": "daisyproject.studio",
-  "success_url": "t.me/DaisyXUpdates",
+  "success_url": "t.me/MissNayGroup",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -22,17 +22,17 @@
   "env": {
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
+      "value": "2818935",
       "required": true
     },
     "APP_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
+      "value": "5fcc28099f20270e35529942adeb7632",
       "required": true
     },
     "MONGO_URI": {
       "description": "Create A Database In Mongodb And Get URL",
-      "value": "",
+      "value": "mongodb+srv://vcgx:vcgx@cluster0.dqret.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
       "required": true
       
     },
@@ -71,42 +71,42 @@
     },
     "REDIS_URI": {
       "description": "Get from redislabs.com",
-      "value": "",
+      "value": "redis-16659.c261.us-east-1-4.ec2.cloud.redislabs.com",
       "required": true
     },
     "REDIS_PORT": {
       "description": "Get from redislabs.com",
-      "value": "",
+      "value": "16659",
       "required": true
     },
     "REDIS_PASS": {
       "description": "Get from redislabs.com",
-      "value": "",
+      "value": "K2U8Q9NFAvnKX3EX4XWvwsKYrpF6FmLp",
       "required": true
     },
     "OWNER_ID": {
       "description": "Your Id",
-      "value": "",
+      "value": "1395299426",
       "required": true
     },
     "OPERATORS": {
       "description": "Space seperated list of sudoes",
-      "value": "",
+      "value": "1395299426",
       "required": true
     },
     "SUPPORT_CHAT": {
       "description": "support chat id",
-      "value": "",
+      "value": "1478114786",
       "required": true
     },
     "LYDIA_API_KEY": {
       "description": "AI chat",
-      "value": "",
+      "value": "a3f969a2db72ebf537c4b89122f77379d4b2efca730069dae80cbb48388d56b0d92c8bf943efaada09027fdcc5ed999b4b6981cfdef588fe904b8d8ec191b95e",
       "required": false
     },
     "DATABASE_URL": {
       "description": "get from elephantsql.com",
-      "value": "",
+      "value": "postgres://zipnxxvx:oh0LnNskv78T_z0PPWFIhq5oJkiiOpTK@ziggy.db.elephantsql.com:5432/zipnxxvx",
       "required": true
     },
     "VIRUS_API_KEY": {
@@ -116,17 +116,17 @@
     },
     "TIME_API_KEY": {
       "description": "Time api key (no need)",
-      "value": "",
+      "value": "O4LS1PTMNP0G",
       "required": false
     },
     "REM_BG_API_KEY": {
       "description": "remove.bg api (no need)",
-      "value": "",
+      "value": "dxsh728mZMDmj4ijSZCNPZig",
       "required": false
     },
     "SW_API": {
       "description": "Spamwatch api @SpamWatchBot",
-      "value": "",
+      "value": "F46H_qGbvpqHoIFsG4cU7em~GwsUBSxhhEFAttUnkbQI7Cpv1y5iKRVrHfmNpvTV",
       "required": true
     },
     "IBM_WATSON_CRED_URL": {
@@ -141,7 +141,7 @@
     },
     "OPENWEATHERMAP_ID": {
       "description": "weather api (no need)",
-      "value": "",
+      "value": "9d3be5e3b8507e16775131ab56b30689",
       "required": false
     },
     "WOLFRAM_ID": {
@@ -166,7 +166,7 @@
     },
     "LOGS_CHANNEL_ID": {
       "description": "Id of your log group/channel",
-      "value": "",
+      "value": "-1001368571453",
       "required": true
     },
     "ALLOW_FORWARDS_COMMANDS": {
@@ -176,12 +176,12 @@
     },
     "TOKEN": {
       "description": "Tg bot token by @BotFarther",
-      "value": "",
+      "value": "1787790129:AAFbTgKJEaOWrU3SYTvpWFIbPo-heMPAKDI",
       "required": true
     },
     "STRING_SESSION": {
       "description": "run repl run And get your String Session",
-      "value": "",
+      "value": "1BVtsOKEBu6UHUW_OCVI4D7N35OP-JG6WZsz0rt-04CS3W6mMKNxdfOfnoBe2Az7vq3bHvhTIAUnPAH9epAlhugV8HYCqpW_yjCTFyn2YCGj2bbG-sfllmC2PYJv7Jth04xu6xdLn7lfmbieuw9X4eJmAiJffJNqu6LeURUK8esKUGeELzBl1Ruo_z2dWnnVfUuTWTEqdx3Hm2qaM5Z-GzsRWJeX1BevYfaFAueKxn4aGyjMk2QCELM6lbKCBMs0I1o_04jUH8V3Lt6-8_2gMs-n3NcxziqLbGuic29KLRxGhXX3jiQBT04kGp00XixHhcl5Ao6LxkwQ-aa8WSflhQ9DOqhiunrs=",
       "required": true
     }
   }
