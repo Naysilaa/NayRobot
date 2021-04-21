@@ -73,20 +73,20 @@ async def get_start_func(message, strings, edit=False):
 
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
-    buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
+    buttons.add(InlineKeyboardButton(strings["btn_bantuan"], callback_data="get_help"))
     buttons.add(
-        InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
+        InlineKeyboardButton(strings["btn_bahasa 🌐"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://www.instagram.com/antoniprananda"
+            strings["btn_instagram 📱"], url="https://www.instagram.com/antoniprananda"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/MissNayChannel"),
-        InlineKeyboardButton("👥 Support Grup", url="https://t.me/MissNayGroup"),
+        InlineKeyboardButton(strings["btn_Support Channel 📁"], url="https://t.me/MissNayChannel"),
+        InlineKeyboardButton("👥 Support Group", url="https://t.me/MissNayGroup"),
     )
     buttons.add(
         InlineKeyboardButton(
-            "🌹 Add Nay Robot to your group",
+            "🌹 Tambahkan Nay Kegrup Kamu",
             url=f"https://telegram.me/missnaybot?startgroup=true",
         )
     )
